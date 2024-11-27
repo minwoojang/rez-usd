@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "23.08"
+version = "24.11"
 
 description = """
     Universal Scene Description (USD) is an efficient, scalable system for authoring, reading, and streaming
@@ -12,17 +12,14 @@ authors = [
 ]
 
 requires = [
-    "boost-1.70+",
-    "cmake-3",
-    "gcc-6.3+",
-    "tbb-2020<2021",
+    "boost",
+    "cmake",
+    "gcc-11",
+    "tbb",
 ]
 
-variants = [
-    [
-        "platform-linux",
-    ],
-]
+variants = [['platform-linux', 'arch-x86_64']]
+
 
 tools = [
     "sdfdump",

@@ -34,6 +34,7 @@ echo -e "\n"
 cd ${BUILD_PATH}
 
 make \
+    VERBOSE=1\
     -j${REZ_BUILD_THREAD_COUNT} \
     install
 
